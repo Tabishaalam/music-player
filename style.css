@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #534789;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player {
+    background: #6581c9;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+}
+
+.cover img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.artist, .album {
+    font-size: 14px;
+    color: #fff;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+#progress-bar {
+    width: 70%;
+    /* -webkit-appearance: none; */
+    background: #fff;
+    height: 3px;
+    outline: none;
+    transition: opacity 0.2s;
+}
+
+#progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    color: #ddd;
+    transform: scale(1.1);
+}
